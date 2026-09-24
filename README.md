@@ -2,7 +2,7 @@ Data analyst in Erlangen, Germany. SQL and Power BI, with Python for the parts a
 
 Two public repositories, built as one system: the analytics, and the generator that produced its input.
 
-**[rfm-customer-segmentation-kupferkanne](https://github.com/ryszard-twardy/rfm-customer-segmentation-kupferkanne)** – customer analytics on synth-datagen output for a fictional brand: 15,000 customers, nine European markets. Nine-stage BigQuery SQL pipeline, twelve-table star schema, 109 DAX measures in a PBIP/TMDL Power BI model, seven report pages, and a recommendation on where the win-back budget should go. Design decisions logged as ADRs.
+**[rfm-customer-segmentation-kupferkanne](https://github.com/ryszard-twardy/rfm-customer-segmentation-kupferkanne)** – customer analytics on synth-datagen output for a fictional brand: 15,000 customers, nine European markets. Nine-step BigQuery SQL pipeline, twelve-table star-schema Power BI model (PBIP/TMDL) with 109 DAX measures, six report pages plus a customer drillthrough, and a recommendation on where the win-back budget should go. Design decisions logged as ADRs. [Live Power BI report](https://app.powerbi.com/view?r=eyJrIjoiM2JlNGExNDMtN2U0ZS00MmYxLWE4M2ItYzMzZjhkY2ZhZWM0IiwidCI6ImNhYTk3MmQ2LWFhYTctNDE0NS1iMTgyLTA2NzkzZWY5NWVhNiJ9&pageName=46bfe20b629145b40be4).
 
 **[synth-datagen](https://github.com/ryszard-twardy/synth-datagen)** – Python CLI that generates multi-table business datasets (retail, SaaS, fintech, logistics, pharma) with referential integrity, deterministic seeding and data-quality defects you inject on purpose: duplicate orders, cents-format inconsistency, orphan keys, type drift. MIT, CI on Python 3.11 to 3.13, [documentation](https://ryszard-twardy.github.io/synth-datagen/).
 
